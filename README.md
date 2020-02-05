@@ -9,3 +9,5 @@ till the request is dont; we put async in front of the function to indicate that
 
 fetch returns a promise and have to call res.json to format into json. bc it's also async we have to also put
 await in front of this
+
+array.sort() method can take a callbackk to specify how you want to sort esp for sorting numerical values bc by default it sorts based on the val being a string
