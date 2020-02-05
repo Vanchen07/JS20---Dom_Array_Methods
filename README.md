@@ -1,0 +1,1 @@
+how to use forEach, map, filter, sort, reduce
