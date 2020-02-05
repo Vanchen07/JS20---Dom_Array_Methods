@@ -43,6 +43,12 @@ function addData(obj) {
     updateDom();
 }
 
+function showMillionaires() {
+    data = data.filter(user => user.money > 1000000);
+
+    updateDom();
+}
+
 function updateDom(providedData = data) {
     main.innerHTML = '<h2><strong>Person</strong>Wealth</h2>';
     providedData.forEach((item) => {
@@ -60,3 +66,4 @@ function formatMoney(num) {
 addUserBtn.addEventListener('click', getRandomUser);
 doubleBtn.addEventListener('click', doubleMoney);
 sortBtn.addEventListener('click', sortByRichest);
+showMillionairesBtn.addEventListener('click', showMillionaires)
